@@ -1,0 +1,5 @@
+node_modules
+*.txt
+*.pug
+dist
+.parcel-cache
