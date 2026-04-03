@@ -94,11 +94,12 @@ dl{
   margin-left: 2rem;
   margin-right: 2rem;
 }
+
 dt{
   font-weight: 700;
 }
 
-/*Media*/
+/* Media */
 figure{
 	text-align: center;
   margin-bottom: 1.5rem;;
@@ -120,7 +121,7 @@ iframe {
   aspect-ratio: 16/9;
 }
 
-/*Links*/
+/* Links */
 a{
   color: var(--primary-color);
   text-decoration: none;
@@ -130,7 +131,7 @@ a:hover {
   color: var(--highlight-color)
 }
 
-/*Links filters*/
+/* Links filters */
 .filters a{
   color: var(--bg-color);
 }
@@ -139,7 +140,7 @@ a:hover {
   background-color: var(--primary-color);
 }
 
-/*Fake button*/
+/* Fake button */
 .fakebutton a{
   color: var(--bg-color);
   background-color: var(--primary-color);
@@ -159,7 +160,7 @@ p.fakebutton{
   text-align: center;
 }
 
-/*Skip screen reader only text*/
+/* Skip screen reader only text */
 .sr-only {
   position: absolute; 
   left: -9999px; 
@@ -179,7 +180,8 @@ p.fakebutton{
 
 
 /***** BODY *****/
-/*Background pattern*/
+
+/* Background pattern */
 body::before{
   background-attachment: scroll;
   content: '';
@@ -215,6 +217,7 @@ a.logo{
 
 
 /***** INDEX *****/
+
 /* Presentation quote */
 section.quote{
   border-bottom-style: solid;
@@ -264,7 +267,8 @@ article{
 
 
 /***** ARTICLES *****/
-/*Date and author name*/
+
+/* Date and author name */
 .firma{
   text-align: center;
   color: var(--secondary-color);
@@ -312,7 +316,7 @@ a.next:hover{
   border-radius: 5px 0 0 5px;
 }
 
-/* On hover, add a dark background color*/
+/* On hover, add a dark background color */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -339,7 +343,7 @@ a.next:hover{
 
 
 /***** CATALOG *****/
-/*Filters and search bar*/
+/* Filters and search bar */
 nav.filters{
   margin-bottom:1rem;
 }
@@ -376,7 +380,7 @@ ul.filters {
 .filters input[type="text"]{
 	border: 2px solid var(--secondary-color);
   border-radius: 15px 15px;
-	background: var(--bg-color) url(../assets/img/icon-search.svg) 95% 50% no-repeat;
+	background: var(--bg-color) url("../assets/img/icon-search.svg") 95% 50% no-repeat;
   width: 100%;
 	height: 2rem;
 	padding: 1rem;
@@ -403,10 +407,10 @@ ul.filters {
 
 
 
-/*Medium sized screens*/
+/* Medium sized screens */
 @media screen and (width > 410px) {
-  
-  /*BASIC*/
+  /**** BASIC *****/
+
   .container{
     padding: 1rem 2rem;
   }
@@ -415,7 +419,7 @@ ul.filters {
     width: 70%;
   }
 
-  /*CATALOG*/
+  /***** CATALOG *****/
   .filters{
     justify-content: space-between;
   }
@@ -431,16 +435,16 @@ ul.filters {
 
 }
 
-/*Big screens*/
+/* Big screens */
 @media screen and (width > 768px){
-
   /***** BASIC *****/
-  /*FakeButton*/
+
+  /* FakeButton */
   p.fakebutton{
     text-align: right;
   }
 
-  /*BLOG*/
+  /**** BLOG *****/
   .entry{
     flex-direction: row;
     flex-wrap: wrap;

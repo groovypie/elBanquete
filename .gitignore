@@ -1,5 +1,7 @@
 node_modules
 *.txt
 *.pug
+*.odt
 dist
 .parcel-cache
+styleint.config.mjs
