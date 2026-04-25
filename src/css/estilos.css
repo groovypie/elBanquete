@@ -2,7 +2,6 @@
     --bg-color: #FCF0E3;
     --primary-color: #581B08;
     --secondary-color: #C88751;
-    --highlight-color: #8C952A;
     --main-font: "Poppins", "Verdana", sans-serif;
 }
 
@@ -33,14 +32,21 @@ body {
   margin-left: auto;
   margin-right: auto;
   background: var(--bg-color);
+  border-width: 0.3rem 0.5rem 0.5rem 0.3rem;
   border-style: solid;
   border-color: var(--secondary-color);
-  border-width: 0.5rem 1rem 1rem 0.5rem;
   border-radius: 10px;
   padding:1rem;
 }
 
-header, footer{
+header{
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+footer{
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -128,7 +134,16 @@ a{
 }
 
 a:hover {
-  color: var(--highlight-color)
+  color: var(--secondary-color);
+}
+
+a[target="_blank"]::after{
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("../assets/img/external-link-svgrepo-com.svg")no-repeat;
+  margin-right: 0.5rem;
+  display: inline-block;
 }
 
 /* Links filters */
@@ -142,18 +157,21 @@ a:hover {
 
 /* Fake button */
 .fakebutton a{
-  color: var(--bg-color);
-  background-color: var(--primary-color);
+  color: var(--primary-color);
+  background-color: var(--bg-color);
   text-transform: uppercase;
-  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  border: solid var(--primary-color);
+  padding: 0.8rem 1.9rem;
   display: inline-block;
   margin-top: 1rem;
+  transition: box-shadow 0.3s ease-out;
 }
 
 .fakebutton a:hover{
-  color: var(--primary-color);
-  background-color: var(--bg-color);
-  border: solid var(--primary-color);
+  color: var(--bg-color);
+  box-shadow: inset 14em 0 0 0 var(--primary-color);
+  font-weight: 700;
 }
 
 p.fakebutton{
@@ -180,7 +198,6 @@ p.fakebutton{
 
 
 /***** BODY *****/
-
 /* Background pattern */
 body::before{
   background-attachment: scroll;
@@ -214,23 +231,109 @@ a.logo{
   font-weight: 700;
 }
 
+ul.header{
+  display: flex;
+  justify-content: right;
+  column-gap: 30px;
+  height: 60px;
+  align-items: flex-end;
+  width: 80%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testButton{
+  padding: 10px 15px 0px 15px;
+  border-radius: 10px 10px 0 0;
+  border-width: 0.3rem 0.3rem 0 0.3rem;
+  border-style: solid;
+  border-color: var(--secondary-color);
+  background-color: var(--bg-color);
+  transition: padding-bottom 0.2s ease-out;
+}
+
+.testButton:hover{
+  padding-bottom: 20px;
+}
+
+.current{
+  box-shadow: 5px 0 var(--primary-color);
+}
+
+.current a:hover{
+  color: var(--secondary-color);
+}
+
 
 
 /***** INDEX *****/
 
 /* Presentation quote */
 section.quote{
-  border-bottom-style: solid;
-  border-bottom-width: 0.3rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  max-width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+svg#animate{
+  width: 200px;
+  height: 300px;
+}
+
+@keyframes animLid {
+  15%{
+    transform: translate(15px, -220px) rotate(-15deg);
+  }
+  50%{
+    transform: translate(10px, -200px) rotate(-10deg);
+  }
+  80%{
+    transform: translate(15px, -220px) rotate(-15deg);
+  }
+  100%{
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes animBook{
+  0%{
+    opacity: 0;
+  }
+  15%{
+    opacity: 100%;
+    transform: translate(0px, -20px) rotate(8deg);
+  }
+  75%{
+    transform: translate(0px, -20px) rotate(8deg);
+  }
+  80%{
+    opacity: 100%;
+    transform: translate(0px, -30px) rotate(10deg);
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+svg#animate .book{
+  transform-origin: bottom center;
+  animation: animBook 3s infinite;
+}
+
+svg#animate .lid{
+  transform-origin: bottom center;
+  animation: animLid 3s infinite;
 }
 
 .quote p{
-  text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2rem;
   color: var(--primary-color);
-  margin:2rem 1rem;
 }
 
 section{
@@ -252,8 +355,45 @@ article{
 }
 
 .entry{
-  display:flex;
-  flex-direction: column;
+  position: relative;
+  margin-top: 4rem;
+	width: 90%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(1px 5px 5px var(--primary-color));
+}
+
+.sheet{
+    background-image: repeating-linear-gradient(0deg, #eadeda, #eadeda 2px, #fffcf9 2px, #fffcf9 26px);
+    padding:3rem 1.5rem;
+    border-radius: 5px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 90% 94%, 85% 100%, 76% 96%, 68% 100%, 62% 98%, 56% 100%, 49% 95%, 43% 100%, 36% 98%, 30% 100%, 20% 96%, 15% 100%, 9% 96%, 0% 100%);
+    display:flex;
+    flex-direction: column;
+}
+
+.entry::after{
+    background: rgba(255,255,235,.6);
+    box-shadow: 0 1px 3px rgba(0,0,0,.4);
+    content: "";
+    display: block;
+    height: 60px;
+    position: absolute;
+    margin: auto;
+    width: 150px;
+    left: 50%;
+    margin-left: -75px;
+    top: -20px;
+    transform: rotate(5deg);
+}
+
+.entry figure{
+  margin: 1rem;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 5px 5px 10px var(--primary-color);
+  transform: rotate(-1deg);
 }
 
 .wordsvalue{
@@ -278,11 +418,14 @@ article{
 .slideshow-container {
   position: relative;
   margin: auto;
-  max-width: 1000px;
+  max-width: 800px;
 }
 
 figure.mySlides{
   position: relative;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: 5px 5px 10px var(--primary-color);
 }
 
 /* Hide the images by default */
@@ -408,7 +551,7 @@ ul.filters {
 
 
 /* Medium sized screens */
-@media screen and (width > 410px) {
+@media screen and (width > 440px) {
   /**** BASIC *****/
 
   .container{
@@ -433,26 +576,12 @@ ul.filters {
     flex:1;
   }
 
-}
-
-/* Big screens */
-@media screen and (width > 768px){
-  /***** BASIC *****/
-
-  /* FakeButton */
-  p.fakebutton{
-    text-align: right;
-  }
-
   /**** BLOG *****/
-  .entry{
+  
+  .sheet{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
-  }
-
-  .entry div{
-    position:relative
   }
 
   .entry p:first-of-type{
@@ -471,9 +600,26 @@ ul.filters {
   }
 
   .entry .fakebutton{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    margin-top: 2rem;
+    margin-right: 2rem;
   }
+
+  .works{
+    grid-template-columns: repeat(5,1fr);
+    gap: 15px;
+  }
+
+}
+
+/* Big screens */
+@media screen and (width > 768px){
+  /***** BASIC *****/
+
+  /* FakeButton */
+  p.fakebutton{
+    text-align: right;
+  }
+
+
 
 }

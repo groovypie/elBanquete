@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.svg">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,9 +14,9 @@
   <body><a class="sr-only" href="#main">Ir al contenido principal</a>
 <header>
   <nav><a class="logo" href="index.html">El Banquete </a>
-    <ul> 
-      <li><a href="./blog.html">Blog</a></li>
-      <li><a href="./catalog.html">Catalogo</a></li>
+    <ul class="header"> 
+      <li class="testButton"><a href="./blog.html">Blog</a></li>
+      <li class="testButton current"><a href="./catalog.html">Catálogo</a></li>
     </ul>
   </nav>
 </header>
@@ -37,8 +38,16 @@
         </nav>
         <div>
           <ul class="works">
-            <li><a href=""><img src="assets/img/DungeonMeshi_cover.jpg" alt="Portada de la serie Tragones y Mazmorras"></a></li>
-            <li><a href=""><img src="assets/img/Makanai_cover.jpg" alt="Portada de la serie Makanai"></a></li>
+            <li><a href="">
+                <picture> 
+                  <source media="(min-resolution:1.5x)" srcset="assets/img/DungeonMeshi_cover_300.jpg?as=webp 300w" sizes="(min-width:440px) 200px, 300px" type="image/webp">
+                  <source srcset="assets/img/DungeonMeshi_cover_300.jpg?as=webp&amp;width=200 200w, assets/img/DungeonMeshi_cover_300.jpg?as=webp&amp;width=150 150w" sizes="(max-width:440px) 150px, 200px" type="image/webp"><img src="assets/img/DungeonMeshi_cover_300.jpg?width=200" alt="Portada de la serie Tragones y Mazmorras">
+                </picture></a></li>
+            <li><a href="">
+                <picture> 
+                  <source media="(min-resolution:1.5x)" srcset="assets/img/Makanai_cover_300.jpg?as=webp 300w" sizes="(min-width:440px) 200px, 300px" type="image/webp">
+                  <source srcset="assets/img/Makanai_cover_300.jpg?as=webp&amp;width=200 200w, assets/img/Makanai_cover_300.jpg?as=webp&amp;width=150 150w" sizes="(max-width:440px) 150px, 200px" type="image/webp"><img src="assets/img/Makanai_cover_300.jpg?width=200" alt="Portada de la serie Makanai">
+                </picture></a></li>
           </ul>
         </div>
       </main>
@@ -46,7 +55,7 @@
 <footer> 
   <ul> 
     <li> <a href="./aboutUs.html">Sobre este blog</a></li>
-    <li> <a href="./links.html">Creditos</a></li>
+    <li> <a href="./links.html">Créditos</a></li>
   </ul>
 </footer>
   </body>

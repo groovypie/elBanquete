@@ -4,4 +4,4 @@ node_modules
 *.odt
 dist
 .parcel-cache
-styleint.config.mjs
+stylelint.config.mjs

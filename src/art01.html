@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.svg">
     <link rel="stylesheet" href="css/estilos.css">
     <script type="module" src="javascript/javascript.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +15,9 @@
   <body><a class="sr-only" href="#main">Ir al contenido principal</a>
 <header>
   <nav><a class="logo" href="index.html">El Banquete </a>
-    <ul> 
-      <li><a href="./blog.html">Blog</a></li>
-      <li><a href="./catalog.html">Catalogo</a></li>
+    <ul class="header"> 
+      <li class="testButton"><a href="./blog.html">Blog</a></li>
+      <li class="testButton"><a href="./catalog.html">Catálogo</a></li>
     </ul>
   </nav>
 </header>
@@ -38,13 +39,22 @@
         <p>Pero ni siquiera él ha llegado nunca tan lejos y juntos deberán enfrentarse a manjares nunca probados. La autora presenta el ciclo completo, negándose a reducir la cocina de su historia a un nombre fantasioso y una bonita presentación. Así, muchas criaturas de la mazmorra tienen a los viajantes en algún punto de su cadena alimentaria y desarrollan adaptaciones para cazarlos. Ser devorado por algo es una amenaza constante, y la solución siempre será comerlo antes de que te coma a ti.</p>
         <p>En esta aventura, Laios, Marcille, Chilchuck, Senshi e Izutsumi no solo descubren juntos maneras increíbles de cocinar monstruos, también aprenden sobre cómo la alimentación transforma el extraño entorno de la mazmorra. Sin verlo venir, se dan de bruces con un mundo movido por el hambre, donde los elementos más insospechados necesitan sustento y donde hasta los sueños, las pesadillas y los deseos pueden ser comidos.</p>
         <div class="slideshow-container">
-          <figure class="mySlides"><img src="assets/img/DungeonMeshi_dish01.jpg" alt="Captura de pantalla.Presentación de la tarta de planta carnivora">
+          <figure class="mySlides">
+            <picture>
+              <source media="(max-width:440px)" srcset="assets/img/DungeonMeshi_dish01_square.jpg"><img src="assets/img/DungeonMeshi_dish01.jpg" alt="Captura de pantalla.Presentación de la tarta de planta carnivora">
+            </picture>
             <figcaption>Tarta de planta carnívora | Capítulo 1</figcaption>
           </figure>
-          <figure class="mySlides"><img src="assets/img/DungeonMeshi_dish03.jpg" alt="Captura de pantalla. Presentación del salteado al estilo enano y sopa de armadura viviente.">
+          <figure class="mySlides">
+            <picture>
+              <source media="(max-width:440px)" srcset="assets/img/DungeonMeshi_dish02_square.jpg"><img src="assets/img/DungeonMeshi_dish03.jpg" alt="Captura de pantalla. Presentación del salteado al estilo enano y sopa de armadura viviente.">
+            </picture>
             <figcaption>Salteado al estilo enano y sopa de armadura viviente | Capítulo 3</figcaption>
           </figure>
-          <figure class="mySlides"><img src="assets/img/DungeonMeshi_dish02.jpg" alt="Captura de pantalla. Presentación de los snaks de insectos del tesoro">
+          <figure class="mySlides">
+            <picture>
+              <source media="(max-width:440px)" srcset="assets/img/DungeonMeshi_dish03_square.jpg"><img src="assets/img/DungeonMeshi_dish02.jpg" alt="Captura de pantalla. Presentación de los snaks de insectos del tesoro">
+            </picture>
             <figcaption><i lang="en">Snaks</i> de insectos del tesoro | Capítulo 5</figcaption>
           </figure><a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
@@ -54,7 +64,7 @@
 <footer> 
   <ul> 
     <li> <a href="./aboutUs.html">Sobre este blog</a></li>
-    <li> <a href="./links.html">Creditos</a></li>
+    <li> <a href="./links.html">Créditos</a></li>
   </ul>
 </footer>
   </body>

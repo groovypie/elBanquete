@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.svg">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,41 +14,65 @@
   <body><a class="sr-only" href="#main">Ir al contenido principal</a>
 <header>
   <nav><a class="logo" href="index.html">El Banquete </a>
-    <ul> 
-      <li><a href="./blog.html">Blog</a></li>
-      <li><a href="./catalog.html">Catalogo</a></li>
+    <ul class="header"> 
+      <li class="testButton"><a href="./blog.html">Blog</a></li>
+      <li class="testButton"><a href="./catalog.html">Catálogo</a></li>
     </ul>
   </nav>
 </header>
     <div class="container">
       <main>
-        <section class="quote">
+        <section class="quote"><svg id="animate" xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400">
+<g class="book">
+<rect x="90" y="220" width="121" height="150" rx="10" ry="10" fill="#581b08" stroke="#581b08" stroke-width="3px"/>
+<path d="M105,221l97-1a10,10,0,0,1,10,10V360a10,10,0,0,1-10,10l-97-2a9.9,9.9,0,0,1-10-9.8V230.8A9.9,9.9,0,0,1,105,221Zm63-1h22l-1-19-10,8-11-7v18Z" fill="#c88751" fill-rule="evenodd" stroke="#581b08" stroke-width="3px"/>
+<path d="M201.379,220.666a10,10,0,0,1,10.084,9.915l1.07,127a10,10,0,0,1-9.915,10.083l-80,.674a10,10,0,0,1-10.084-9.915l-1.07-127a10,10,0,0,1,9.915-10.083Z" fill="#581b08" fill-rule= "evenodd" stroke="#581b08" stroke-width="3px"/>
+<rect x="128" y="239" width="73" height="37" rx="10" ry="10" stroke="#581b08" stroke-width="3px" fill="#c88751"/>
+</g>
+<rect x="3" y="376" width="294" height="17" fill="#581b08"/>
+<path class="lid" d="M3,370c0-81.738,66.038-148,147.5-148S298,288.262,298,370M131.312,223.609c-5.9-10.98-.944-30.868,18.143-30.609,21.5,0.292,24.3,18.247,19.539,32" fill="#581b08" fill-rule= "evenodd"/>
+</svg>
           <p>Un blog dedicado a la comida en la ficción y a las obras de ficción que aprecian la comida :)</p>
         </section>
         <section>
           <h2>Última entrada</h2>
           <div class="entry">
-            <p> 
-              <time datetime="2026-03-31">31/03/2026</time>
-            </p>
-            <figure><img src="assets/img/DungeonMeshi_dish01.jpg" alt="Captura de pantalla.Presentación de la tarta de planta carnivora"></figure>
-            <div>
-              <h3>Comer o ser comido</h3>
-              <p>De como el hambre mueve la historia</p>
-              <p class="wordsvalue">2.5k palabras</p>
-              <ul class="filters">
-                <li> <a href="">Tragones y Mazmorras</a></li>
-                <li><a href="">Series </a></li>
-              </ul>
-              <p class="fakebutton"><a href="art01.html">Leer entrada</a></p>
+            <div class="sheet">
+              <p> 
+                <time datetime="2026-03-31">31/03/2026</time>
+              </p>
+              <figure>
+                <picture>
+                  <source media="(max-width:800px)" srcset="assets/img/DungeonMeshi_dish01_square.jpg 550w"><img src="assets/img/DungeonMeshi_dish01.jpg" alt="Captura de pantalla.Presentación de la tarta de planta carnivora">
+                </picture>
+              </figure>
+              <div>
+                <h3>Comer o ser comido</h3>
+                <p>De como el hambre mueve la historia</p>
+                <p class="wordsvalue">2.5k palabras</p>
+                <ul class="filters">
+                  <li> <a href="">Tragones y Mazmorras</a></li>
+                  <li><a href="">Series </a></li>
+                </ul>
+                <p class="fakebutton"><a href="art01.html">Leer entrada</a></p>
+              </div>
             </div>
           </div>
         </section>
         <section> 
-          <h2>Añadidas recientemente</h2><ul class="works">
-<li><a href="#"><img src="assets/img/DungeonMeshi_cover.jpg" alt="Portada de la serie Tragones y Mazmorras"></a></li>
-<li><a href="#"><img src="assets/img/Makanai_cover.jpg" alt="Portada de la serie Makanai"></a></li>
-</ul>
+          <h2>Añadidas recientemente</h2>
+          <ul class="works">
+            <li><a href="">
+                <picture> 
+                  <source media="(min-resolution:1.5x)" srcset="assets/img/DungeonMeshi_cover_300.jpg?as=webp 300w" sizes="(max-width:440px) 200px, 300px" type="image/webp">
+                  <source srcset="assets/img/DungeonMeshi_cover_300.jpg?as=webp&amp;width=200 200w, assets/img/DungeonMeshi_cover_300.jpg?as=webp&amp;width=150 150w" sizes="(max-width:440px) 150px, 200px" type="image/webp"><img src="assets/img/DungeonMeshi_cover_300.jpg?width=200" alt="Portada de la serie Tragones y Mazmorras">
+                </picture></a></li>
+            <li><a href="">
+                <picture> 
+                  <source media="(min-resolution:1.5x)" srcset="assets/img/Makanai_cover_300.jpg?as=webp 300w" sizes="(max-width:440px) 200px, 300px" type="image/webp">
+                  <source srcset="assets/img/Makanai_cover_300.jpg?as=webp&amp;width=200 200w, assets/img/Makanai_cover_300.jpg?as=webp&amp;width=150 150w" sizes="(max-width:440px) 150px, 200px" type="image/webp"><img src="assets/img/Makanai_cover_300.jpg?width=200" alt="Portada de la serie Makanai">
+                </picture></a></li>
+          </ul>
           <p class="fakebutton"><a href="catalog.html">Ir a catálogo</a></p>
         </section>
       </main>
@@ -55,7 +80,7 @@
 <footer> 
   <ul> 
     <li> <a href="./aboutUs.html">Sobre este blog</a></li>
-    <li> <a href="./links.html">Creditos</a></li>
+    <li> <a href="./links.html">Créditos</a></li>
   </ul>
 </footer>
   </body>

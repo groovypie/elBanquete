@@ -1,0 +1,10 @@
+<svg id="Base" xmlns="http://www.w3.org/2000/svg" width="300" height="400" viewBox="0 0 300 400">
+  <g class="book">
+    <rect x="90" y="220" width="121" height="150" rx="10" ry="10" fill="#581b08" stroke="#581b08" stroke-width="3px"/>
+    <path d="M105,221l97-1a10,10,0,0,1,10,10V360a10,10,0,0,1-10,10l-97-2a9.9,9.9,0,0,1-10-9.8V230.8A9.9,9.9,0,0,1,105,221Zm63-1h22l-1-19-10,8-11-7v18Z" fill="#c88751" fill-rule="evenodd" stroke="#581b08" stroke-width="3px"/>
+    <path d="M201.379,220.666a10,10,0,0,1,10.084,9.915l1.07,127a10,10,0,0,1-9.915,10.083l-80,.674a10,10,0,0,1-10.084-9.915l-1.07-127a10,10,0,0,1,9.915-10.083Z" fill="#581b08" fill-rule= "evenodd" stroke="#581b08" stroke-width="3px"/>
+    <rect x="128" y="239" width="73" height="37" rx="10" ry="10" stroke="#581b08" stroke-width="3px" fill="#c88751"/>
+  </g>
+  <rect class="base" x="3" y="376" width="294" height="17" fill="#581b08"/>
+  <path class="tapa" d="M3,370c0-81.738,66.038-148,147.5-148S298,288.262,298,370M131.312,223.609c-5.9-10.98-.944-30.868,18.143-30.609,21.5,0.292,24.3,18.247,19.539,32" fill="#581b08" fill-rule= "evenodd"/>
+</svg>

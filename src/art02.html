@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/icon.svg">
     <link rel="stylesheet" href="css/estilos.css">
     <script type="module" src="javascript/javascript.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,9 +15,9 @@
   <body>
 <header>
   <nav><a class="logo" href="index.html">El Banquete </a>
-    <ul> 
-      <li><a href="./blog.html">Blog</a></li>
-      <li><a href="./catalog.html">Catalogo</a></li>
+    <ul class="header"> 
+      <li class="testButton"><a href="./blog.html">Blog</a></li>
+      <li class="testButton"><a href="./catalog.html">Catálogo</a></li>
     </ul>
   </nav>
 </header>
@@ -34,13 +35,22 @@
         <p><i lang="ja">Makanai</i>: La cocinera de las maiko (2023, Hirokazu Koreeda) está basada en el manga Maiko-san chi no Makanai-san, de Aiko Koyama. Cuenta la historia de Kiyo y Sumire, dos amigas que buscan convertirse en grandes maikos y encontrar su lugar en ese mundo de clase y lujosos festines. Pero mientras Sumire brilla con luz propia en las prácticas, Kiyo se da de bruces constantemente y acaba por entender que ni quiere ni necesita lujosos festines.</p>
         <p>La serie está repleta de comida con intención. Kiyo cuida, Kiyo quiere, Kiyo cocina. Kiyo tiene un idioma difícil de entender pero fácil de saborear, y lo habla a la perfección. Se fue de casa buscando fortuna y dio con ella entre el mercado local y las ollas del servicio de la casa de las maiko. Y así, esta serie se convirtió rápidamente en uno de esos viajes que te calienta el corazón, lleno de deliciosas recetas japonesas a las que solo les falta una etiqueta que ponga de manera explícita "Hecho con amor".</p>
         <div class="slideshow-container">
-          <figure class="mySlides"><img src="assets/img/Makanai_dish01.png" alt="Captura de pantalla.Postre realizado por Kiyo">
+          <figure class="mySlides">
+            <picture>
+              <source media="(max-width:440px)" srcset="assets/img/Makanai_dish01_square.jpg"><img src="assets/img/Makanai_dish01.jpg" alt="Captura de pantalla.Postre realizado por Kiyo">
+            </picture>
             <figcaption>Postre de Kiyo</figcaption>
           </figure>
-          <figure class="mySlides"><img src="assets/img/Makanai_dish02.png" alt="Captura de pantalla. Presentación del salteado al estilo enano y sopa de armadura viviente.">
+          <figure class="mySlides">
+            <picture>
+              <source media="(max-width:440px)" srcset="assets/img/Makanai_dish02_square.jpg"><img src="assets/img/Makanai_dish02.jpg" alt="Captura de pantalla. Presentación del salteado al estilo enano y sopa de armadura viviente.">
+            </picture>
             <figcaption>El servicio comiendo en la cocina de la casa de las maiko</figcaption>
           </figure>
-          <figure class="mySlides"><img src="assets/img/Makanai_dish03.png" alt="Captura de pantalla. Presentación de los snaks de insectos del tesoro">
+          <figure class="mySlides">
+            <picture>
+              <source media="(max-width:440px)" srcset="assets/img/Makanai_dish03_square.jpg"><img src="assets/img/Makanai_dish03.jpg" alt="Captura de pantalla. Presentación de los snaks de insectos del tesoro">
+            </picture>
             <figcaption>Kiyo cocinando </figcaption>
           </figure><a class="prev" onclick="plusSlides(-1)">&#10094;</a><a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
@@ -50,7 +60,7 @@
 <footer> 
   <ul> 
     <li> <a href="./aboutUs.html">Sobre este blog</a></li>
-    <li> <a href="./links.html">Creditos</a></li>
+    <li> <a href="./links.html">Créditos</a></li>
   </ul>
 </footer>
   </body>
